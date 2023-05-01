@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Particeep Sign Up Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="particeep-logo">
+            <img src="image/particeep.webp" alt="Particeep Logo">
+        </div>
+
+        <form class="form-container">
+            <div class="badge-container">
+                <span class="badge">1/16</span>
+            </div>
+            <h3 class="title">Vos informations</h3>
+            
+            <label for="prenom">PRÉNOM*</label>
+            <input type="text" id="prenom" name="prenom" placeholder="Donnez votre réponse ici" required>
+        
+            <label for="nom">NOM*</label>
+            <input type="text" id="nom" name="nom" placeholder="Donnez votre réponse ici" required>
+        
+            <label for="adresse">ADRESSE COMPLÈTE*</label>
+            <textarea id="adresse" name="adresse" placeholder="Donnez votre réponse ici" required></textarea>
+        
+            <label for="date_naissance">DATE DE NAISSANCE*</label>
+            <input type="date" id="date_naissance" name="date_naissance" required>
+        
+            <label for="telephone">NUMÉRO DE TÉLÉPHONE*</label>
+            <div class="telephone">
+                <select id="pays" name="pays">
+                    <option value="FR">🇫🇷 (+33)</option>
+                    <option value="CA">🇨🇦 (+1)</option>
+                    <option value="US">🇺🇸 (+1)</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <input type="tel" id="numero" name="numero" required>
+            </div>
+        
+            <label>QUESTION À CHOIX MUTIPLE*</label>
+            <div class="choix">
+                <input type="radio" id="oui" name="choix" value="oui">
+                <label for="oui">Oui</label>
+                <input type="radio" id="non" name="choix" value="non">
+                <label for="non">Non</label>
+            </div>
+        
+            <label for="email">ADRESSE EMAIL*</label>
+            <input type="email" id="email" name="email" placeholder="Donnez votre réponse ici" required>
+        
+            <label for="piece_identite">PIÈCE D'IDENTITÉ</label>
+            <div class="importer">
+                <div>
+                    <label class="file-input-text" for="file-input">
+                        <i class="fas fa-file-import"></i>
+                        <span>Glissez votre fichier dans cette zone</span>
+                    </label>
+                    <input id="file-input" type="file" />
+                </div>
+            </div>
+
+            <button class="submit" type="submit">Suivant</button>
+        </form>
+
+        <div class="footer" >We inform you that data gathered will be managed by computer only by prodivers of offers</div>
+    </div>
+  </body>
+</html>
